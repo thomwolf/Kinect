@@ -294,6 +294,7 @@ $(OBJDIR)/GridTool.o: CFLAGS += -DKINECT_CAMERA_INTRINSICPARAMETERSFILENAMEPREFI
 
 $(EXEDIR)/RawKinectViewer: PACKAGES += MYVRUI MYKINECT
 $(EXEDIR)/RawKinectViewer: $(OBJDIR)/PauseTool.o \
+                           $(OBJDIR)/MeasurementTool.o \
                            $(OBJDIR)/TiePointTool.o \
                            $(OBJDIR)/LineTool.o \
                            $(OBJDIR)/DepthCorrectionTool.o \
